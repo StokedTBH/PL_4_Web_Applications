@@ -59,8 +59,12 @@
 @media only screen and (max-width: 768px) {
   /* For mobile phones and tablets: */
   [class*="col-"] {
-      width: 100%;
-      text-align: center;
+    width: 100%;
+    text-align: center;
+  }
+  .row {
+    flex-direction: column;
+    align-items: center;
   }
 } 
 
@@ -69,3 +73,8 @@
     float: right;
 }
 } 
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
