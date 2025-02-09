@@ -1,16 +1,62 @@
 .container {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
-    text-align: center;
   }
 
 .text-block {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
-    margin: auto;
+    margin: 22px;
     padding: 10px;
     border: 2px solid #000000;
 }
 
+.copyright {
+  float: left;
+}
 
-  
+.primary-footer {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  padding-top: 10px;
+  padding-bottom: 30px
+}
+
+.menu{
+  padding: 5px;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+ }  
+
+.row {
+  width: 100%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-12 {
+  width: 100;
+}
+
+[class*="col-"] {
+  width: 100%;
+}  
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones and tablets: */
+  [class*="col-"] {
+      width: 100%;
+      text-align: center;
+  }
+} 
+
+@media only screen and (min-width: 768px) {
+  [class*="col-"] {
+    float: right;
+}
+} 
