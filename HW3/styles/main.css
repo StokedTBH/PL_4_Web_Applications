@@ -1,0 +1,82 @@
+.container {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+
+.text-block {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+  margin: 22px;
+  padding: 10px;
+}
+
+.outline {
+border: 2px solid #300bd6;
+}
+
+.copyright {
+float: left;
+}
+
+.primary-footer {
+font-family: 'Arial', sans-serif;
+background-color: #f4f4f4;
+padding-top: 10px;
+padding-bottom: 30px;
+position: relative;
+bottom: 0;
+}
+
+.menu {
+padding: 5px;
+width: 100%;
+text-align: center;
+}
+
+* {
+box-sizing: border-box;
+}  
+
+.row {
+width: 100%;
+display: flex;
+}
+
+.col-4 {
+width: 33.33%;
+padding: 5px;
+border: 2px solid #000000;
+}
+
+.col-12 {
+width: 100;
+}
+
+[class*="col-"] {
+width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones and tablets: */
+  [class*="col-"] {
+    width: 100%;
+    text-align: center;
+  }
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+} 
+
+@media only screen and (min-width: 768px) {
+  [class*="col-"] {
+    float: right;
+}
+} 
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
