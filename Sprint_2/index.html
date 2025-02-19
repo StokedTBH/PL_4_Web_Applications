@@ -1,0 +1,161 @@
+<!--
+NavBar
+Card
+Accordion
+Button
+Carousel
+-->
+
+<!DOCTYPE html>
+ <!--
+Script code based on this discussion:
+https://stackoverflow.com/questions/20060467/add-active-navigation-class-based-on-url
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Edward Boehling & Ethan Stokey">
+    <meta name="description" content="This is a website that helps users practice typing.">
+    <meta property="og:title" content="Type to The Top">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://127.0.0.1:5500/index.html">
+    <meta property="og:site_name" content="Type to The Top">
+    <meta property="og:description" content="This is a website that helps users practice typing.">
+    <title>Type To The Top</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet/less" type="text/css" href="styles/custom.less">
+    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+    
+
+</head>
+<body>
+  <div class="bg-dark sticky-top">
+    <header class="d-flex justify-content-center py-3">
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="index.html" class="nav-link" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="leaderboard.html" class="nav-link">Leaderboard</a></li>
+            <li class="nav-item"><a href="profile.html" class="nav-link">Profile</a></li>
+            <li class="nav-item"><a href="settings.html" class="nav-link">Settings</a></li>
+        </ul>
+    </header>
+  </div>
+
+
+  <div>
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Type To The Top Coming Soon</h1>
+              <p class="opacity-75">Website still in construction!</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Compete Against Others</h1>
+              <p>Type faster than your friends!</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>Improve Your Typing Skills</h1>
+              <p>Take our sample tests, or use your own.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="p-3 accordion-container">
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            How To
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <strong>Typing:</strong> In order to begin, hit the button below.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  
+  <div class="card mx-auto" id="openingCard" style="width: 18rem;">
+    <img src="typing_image.png" class="card-img-top" alt="Person typing on keyboard">
+    <div class="card-body">
+      <p class="card-text">Have you always wanted to improve your typing to be at lightning speed? Look no further! Here, we'll offer you the exercises, games, and tools to help you become a typing legend!</p>
+    </div>
+  </div>
+
+  <br>
+    <div class="button mx-auto col-1" id="beginButton">
+      <button type="button" class="btn btn-primary" onclick="toggleImage()">Push to Begin</button>
+    </div>
+
+  <div class="mx-auto">
+      <img id="keyboardImage" src="typing_keyboard.jpg" alt="Keyboard" style="display: none; max-width: 30%; height: auto;">
+  </div>
+
+  <div class="p-3 border">
+    <div class="progressBarUntilNextLevel">
+      <h3>350 More XP Until Level 2!</h3>
+      <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar" style="width: 50%; text-align: center;"></div>
+      </div>
+    </div> 
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <script>
+      document.querySelectorAll('.nav-link').forEach(link => {
+          if (link.href === window.location.href) {
+              link.classList.add('active');
+          }
+      });
+  </script>
+
+  <script>
+    function toggleImage() {
+        let img = document.getElementById("keyboardImage");
+        img.style.display = (img.style.display === "none" || img.style.display === "") ? "block" : "none";
+    }
+  </script>
+
+</body>
+</html>
