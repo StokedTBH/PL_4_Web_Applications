@@ -1,0 +1,39 @@
+@primary-color: #0a4c93;
+@hover-color: #06b300;
+@body-color: #6098ed;
+
+.lightened-container(@color){
+    padding: 1rem;
+    color: lighten(@color, 30%);
+    border-radius: 10px;
+
+}
+
+.accordion {
+    .lightened-container(@primary-color);
+    .accordion-button {
+        background-color: @primary-color;
+        color: white;
+        &:hover {
+            background-color: @hover-color;
+        }
+    }
+    .accordion-body {
+        background-color: @body-color
+    }
+}
+
+.card {
+    .lightened-container(@primary-color);
+    border: 1px solid @primary-color;
+}
+
+.btn-primary {
+    .lightened-container(@primary-color);
+    background-color: @primary-color;
+    border-color: @primary-color;
+    &:hover {
+        background-color: @hover-color;
+        border-color: @hover-color;
+    }
+}
