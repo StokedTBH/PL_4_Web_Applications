@@ -32,6 +32,13 @@ body{
 
 #leaderboard_table {
     width: 80%;
+    background-clip: padding-box; 
+    box-shadow: 0 0 15px #232222;
+    border-radius: 25px;
+}
+
+table {
+    border-radius: 25px;
 }
 
 #leaderboard_table thead {
