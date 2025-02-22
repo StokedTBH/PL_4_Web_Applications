@@ -30,3 +30,18 @@ body{
 }
 
 
+#leaderboard_table {
+    width: 80%;
+}
+
+#leaderboard_table thead {
+    text-align: end;
+}
+
+#leaderboard_table tbody th {
+    text-align: center;
+}
+
+#leaderboard_table tbody td {
+    text-align: end;
+}
