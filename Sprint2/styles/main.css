@@ -1,0 +1,30 @@
+/*
+Have at least two CSS rules that update the style or layout of your screens when specific events occur
+Support responsive layout
+*/
+
+/*
+This code is based on: https://www.w3schools.com/css/css3_variables.asp
+*/
+:root {
+    --primary: #1f1f21;
+    --secondary: #dbdb63;
+}
+
+#header {
+    background-color: var(--primary);
+}
+
+.nav-item .nav-link{
+    margin-right: 10px;
+    margin-left: 10px;
+    color: var(--secondary);
+}
+
+.nav-item .nav-link.active {
+    background-color: var(--secondary);
+    color: var(--primary); 
+
+}
+
+
