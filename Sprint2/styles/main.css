@@ -10,10 +10,20 @@ This code is based on: https://www.w3schools.com/css/css3_variables.asp
     --primary: #1f1f21;
     --secondary: #dbdb63;
     --tertiary: rgb(71, 71, 71);
+    --quadernary: #dcdca5;
+}
+
+body{
+    background-color: var(--tertiary);
 }
 
 #header {
     background-color: var(--primary);
+}
+
+.site-desc {
+    color: var(--secondary);
+    font-size: 60px;
 }
 
 .nav-item .nav-link{
@@ -24,9 +34,3 @@ This code is based on: https://www.w3schools.com/css/css3_variables.asp
     background-color: var(--secondary);
     color: var(--primary); 
 }
-
-body{
-    background-color: var(--tertiary);
-}
-
-
