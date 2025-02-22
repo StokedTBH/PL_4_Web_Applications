@@ -9,6 +9,7 @@ This code is based on: https://www.w3schools.com/css/css3_variables.asp
 :root {
     --primary: #1f1f21;
     --secondary: #dbdb63;
+    --tertiary: rgb(71, 71, 71);
 }
 
 #header {
@@ -16,15 +17,16 @@ This code is based on: https://www.w3schools.com/css/css3_variables.asp
 }
 
 .nav-item .nav-link{
-    margin-right: 10px;
-    margin-left: 10px;
     color: var(--secondary);
 }
 
 .nav-item .nav-link.active {
     background-color: var(--secondary);
     color: var(--primary); 
+}
 
+body{
+    background-color: var(--tertiary);
 }
 
 
