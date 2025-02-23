@@ -7,13 +7,23 @@ Support responsive layout
 This code is based on: https://www.w3schools.com/css/css3_variables.asp
 */
 :root {
-    --primary: #1f1f21;
-    --secondary: #dbdb63;
-    --tertiary: rgb(71, 71, 71);
+    --primary: #2a55d8;
+    --secondary: #08143f;
+    --tertiary: rgb(160, 176, 244);
+    --quadernary: #ffffff;
+}
+
+body{
+    background-color: var(--tertiary);
 }
 
 #header {
     background-color: var(--primary);
+}
+
+.site-desc {
+    color: var(--secondary);
+    font-size: 60px;
 }
 
 .nav-item .nav-link{
@@ -23,10 +33,6 @@ This code is based on: https://www.w3schools.com/css/css3_variables.asp
 .nav-item .nav-link.active {
     background-color: var(--secondary);
     color: var(--primary); 
-}
-
-body{
-    background-color: var(--tertiary);
 }
 
 
