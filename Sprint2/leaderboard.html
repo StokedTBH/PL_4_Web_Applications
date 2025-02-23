@@ -33,6 +33,61 @@ https://stackoverflow.com/questions/20060467/add-active-navigation-class-based-o
     </header>
   </div>
 
+  <div class="text-center mx-auto mt-5 mb-3" id="leadboard_title">
+    <h1>Leaderboard</h1>
+  </div>
+
+  <div class="text-center mx-auto mb-1">
+    <span id="leaderboard_sort_by">
+      <label for="sort_by" style="color: var(--secondary)">Sort by</label>
+      <select name="sort_by" id="sort_by_dropdown">
+        <option value="typing_score">Typing Score</option>
+        <option value="avg_wpm">Avg. WPM</option>
+        <option value="avg_accuracy">Avg. Accuracy</option>
+      </select>
+    </span>
+    &nbsp;
+    <span>
+      <button type="button" class="btn-sm p-2 rounded-circle" style="background-color: var(--primary); color: var(--secondary);">&nbsp;&#129033;&nbsp;</button>
+    </span>
+  </div>
+
+  <div class="d-flex mx-auto border border-dark" id="leaderboard_table" style="background-color: var(--secondary);">
+    <table class="table table-striped table-custom" style="margin: 14px; border-radius: 10px; overflow: hidden;">
+      <thead class="table-dark" style="border-radius: 10px 10px 0 0;">
+        <tr>
+          <th class="text-center" scope="col">Rank</th>
+          <th scope="col">Username</th>
+          <th scope="col">Avg. Typing Speed (WPM)</th>
+          <th scope="col">Avg. Typing Accuracy (%)</th>
+          <th scope="col">Typing Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Ned Boeling</td>
+          <td>75.6</td>
+          <td>93.4</td>
+          <td>3,094</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Ethan</td>
+          <td>88.0</td>
+          <td>99.4</td>
+          <td>2,990</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Stokey</td>
+          <td>110.2</td>
+          <td>83.2</td>
+          <td>2,415</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
