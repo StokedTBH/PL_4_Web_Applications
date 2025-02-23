@@ -33,6 +33,44 @@ https://stackoverflow.com/questions/20060467/add-active-navigation-class-based-o
     </header>
   </div>
 
+  <div class="text-center mx-auto mt-4 mb-3" id="settings_title">
+    <h1>Settings</h1>
+  </div>
+
+  <div class="text-center mx-auto border border-dark mb-3" id="settings">
+    <div class="change_info">
+      <span>
+        <label for="email" style="color: var(--secondary)">Change email:</label>
+        <input type="email" id="change_email" pattern=".+@example\.com" size="30"/>
+        <button type="button" class="btn" style="color: var(--primary); background-color: var(--secondary);">Confirm Email</button>
+      </span>
+      <hr>
+      <span>
+        <label for="password" style="color: var(--secondary)">Change password:</label>
+        <input type="password" id="change_password" pattern=".+@example\.com" size="30"/>
+        <button type="button" class="btn" style="color: var(--primary); background-color: var(--secondary);">Confirm Password</button>
+      </span>
+    </div>
+
+    <br>
+
+    <!-- Code here -->
+    <div>
+      <span>
+        <div class="row mx-auto">
+          <div class="change_info col-md-6" id="sound_settings">
+            <h4>Sound</h4>
+            <input type="range" id="volume" name="volume" min="0" max="20"/>
+          </div>
+          <div class="change_info col-md-6" id="theme_settings">
+            <h4>Themes</h4>
+            <button type="button" class="btn" style="color: var(--primary); background-color: var(--secondary);">Light</button>
+            <button type="button" class="btn" style="color: var(--primary); background-color: var(--secondary);">Dark</button>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

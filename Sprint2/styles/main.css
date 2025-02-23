@@ -13,6 +13,11 @@ This code is based on: https://www.w3schools.com/css/css3_variables.asp
     --quadernary: #ffffff;
 }
 
+hr {
+    height: 3px;
+    background-color: var(--quadernary);
+}
+
 body{
     background-color: var(--tertiary);
 }
@@ -73,4 +78,34 @@ table {
 
 #leaderboard_table tbody td {
     text-align: end;
+}
+
+#settings_title {
+    color: var(--secondary);
+    background-color: var(--primary);
+    width: 20%;
+    width: fit-content;
+    height: fit-content;
+    padding: 1px 10px;
+    border-radius: 10px;
+}
+
+#settings {
+    width: 80%;
+    height: 500px;
+    padding: 10px;
+    background-clip: padding-box; 
+    box-shadow: 0 0 15px var(--primary);
+    background-color: var(--secondary);
+    border-radius: 25px;
+}
+
+.change_info {
+    padding: 12px;
+    background-color: var(--primary);
+    border-radius: 15px;
+}
+
+#sound_settings {
+
 }
