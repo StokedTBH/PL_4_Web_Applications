@@ -30,6 +30,22 @@ body{
 }
 
 
+#leadboard_title {
+    color: var(--secondary);
+    background-color: var(--primary);
+    width: 20%;
+    width: fit-content;
+    height: fit-content;
+    padding: 1px 10px;
+    border-radius: 10px;
+}
+
+#leaderboard_sort_by {
+    padding: 10px;
+    background-color: var(--primary);
+    border-radius: 10px;;
+}
+
 #leaderboard_table {
     width: 80%;
     background-clip: padding-box; 
