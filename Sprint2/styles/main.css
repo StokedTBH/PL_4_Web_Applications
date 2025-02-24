@@ -7,9 +7,9 @@ Support responsive layout
 This code is based on: https://www.w3schools.com/css/css3_variables.asp
 */
 :root {
-    --primary: #172d4f;
-    --secondary: #4f98a2;
-    --tertiary: rgb(189, 242, 255);
+    --primary: #48d8e8;
+    --secondary: #132743;
+    --tertiary: rgb(202, 242, 252);
     --quadernary: #ffffff;
 }
 
@@ -24,6 +24,7 @@ body{
 
 #header {
     background-color: var(--primary);
+    font-size: 16px;
 }
 
 .site-desc {
@@ -43,6 +44,7 @@ body{
 .btn {
     background-color: var(--secondary);
     outline-color: var(--secondary);
+    font-size: 26px;
 }
 
 
