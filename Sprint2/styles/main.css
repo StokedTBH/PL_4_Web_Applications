@@ -152,6 +152,22 @@ table {
 }
 
 @media (min-width: 768px) {
+    #leaderboard_table {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    #leaderboard_table {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+    }
+}
+
+@media (min-width: 768px) {
     #profile-icon {
         position: fixed;
         top: 10px;
