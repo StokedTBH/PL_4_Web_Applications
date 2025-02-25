@@ -161,6 +161,17 @@ table {
     display: block;
 }
 
+#toggle-image {
+    width: 40px;
+    height: 40px;
+}
+
+#toggle-image:target {
+    width: 80px;
+    height: 80px;
+}
+
+
 @media (min-width: 768px) {
     #leaderboard_table {
         width: 100%;
