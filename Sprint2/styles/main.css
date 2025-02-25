@@ -153,6 +153,14 @@ table {
     cursor: pointer;
 }
 
+#test-type1, #test-type3, #test-type5 {
+    display: none;
+}
+
+#test-type1:target, #test-type3:target, #test-type5:target {
+    display: block;
+}
+
 @media (min-width: 768px) {
     #leaderboard_table {
         width: 100%;
