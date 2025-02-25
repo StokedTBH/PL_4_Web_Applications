@@ -99,7 +99,7 @@ table {
 
 #settings {
     width: 80%;
-    height: 500px;
+    height: 550px;
     padding: 10px;
     background-clip: padding-box; 
     box-shadow: 0 0 15px var(--primary);
@@ -152,6 +152,25 @@ table {
     color: white;
     cursor: pointer;
 }
+
+#test-type1, #test-type3, #test-type5 {
+    display: none;
+}
+
+#test-type1:target, #test-type3:target, #test-type5:target {
+    display: block;
+}
+
+#toggle-image {
+    width: 40px;
+    height: 40px;
+}
+
+#toggle-image:target {
+    width: 80px;
+    height: 80px;
+}
+
 
 @media (min-width: 768px) {
     #leaderboard_table {
